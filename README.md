@@ -69,6 +69,10 @@ To set up and run the Book Distribution Management System with Django and Pipenv
 
 If you'd like to contribute to the development of the Book Distribution Management System, please follow our [contribution guidelines](CONTRIBUTING.md).
 
+   If you are interested in contributing it will be very helpful if
+      You start by checking why the imported data does not get saved to the database. The data is provided.
+      Include a forgot password functionality.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md) - see the [LICENSE.md](LICENSE.md) file for details.

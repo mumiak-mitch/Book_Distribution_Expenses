@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Remove Category{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2 class="mt-4 mb-4">Delete Book Category</h2>
+
+    <p>Are you sure you want to delete "{{ object.name }}"?</p>
+
+    <form method="post" action="" class="mb-4">
+      {% csrf_token %}
+      <button type="submit" class="btn btn-danger">Yes, delete</button>
+      <a href="{% url 'bookcategory_list' %}" class="btn btn-secondary">No, cancel</a>
+    </form>
+  </div>
+{% endblock %}

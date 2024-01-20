@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Logout {% endblock %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Logout</h1>
+                    <hr>
+                    <br>
+
+                    <p class="text-center mb-4">
+                        Thank you for visiting our website. We hope to welcome you back again soon.
+                    </p>
+
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-block">Logout</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

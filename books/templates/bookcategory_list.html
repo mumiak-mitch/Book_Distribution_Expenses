@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Book Categories{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <h2 class="mt-4 mb-4">Book Categories</h2>
+    
+    <ul class="list-group">
+      {% for category in object_list %}
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          {{ category.name }}
+          <div class="btn-group" role="group" aria-label="Category Actions">
+            <a href="{% url 'bookcategory_update' pk=category.pk %}" class="btn btn-outline-primary btn-sm">Edit</a>
+            <a href="{% url 'bookcategory_delete' pk=category.pk %}" class="btn btn-outline-danger btn-sm">Delete</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <a href="{% url 'bookcategory_create' %}" class="btn btn-success mt-4">Add Category</a>
+  </div>
+{% endblock %}
