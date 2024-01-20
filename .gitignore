@@ -1,0 +1,31 @@
+# .gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Django local settings
+**/settings.py
+
+# Logs and databases
+*.log
+*.sqlite3
+db.sqlite3
+
+# Media and static files
+media/
+static/
+
+# Compiled bytecode
+ExpenseTracker/__pycache__/
+*.pyc
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
