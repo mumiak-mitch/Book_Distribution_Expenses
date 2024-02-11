@@ -60,7 +60,7 @@
             <!-- Sidebar -->
             <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar fixed-sidebar">
                 <div class="position-sticky">
-                    <h5 class="text-light mt-3 mb-3">Books Distribution Expense Tracker</h5>
+                    <h5 class="text-light mt-3 mb-3 text-center">{{ user.username }}</h5>
                     <br>
 
                     <ul class="nav flex-column">
@@ -78,7 +78,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'bookcategory_create' %}">
-                                <i class="bi bi-plus"></i> Create Book Categories
+                                <i class="bi bi-plus"></i> Create Category
                             </a>
                         </li>
                         <li class="nav-item">
@@ -114,7 +114,7 @@
             <!-- Main content -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <!-- Light Background Heading -->
-                <div class="bg-light p-3">
+                <div class="bg-light  text-center">
                     <h1 class="text-dark">Books Distribution Expense Tracker</h1>
                 </div>
             
