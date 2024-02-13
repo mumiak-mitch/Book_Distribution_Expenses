@@ -1,5 +1,6 @@
 from django import forms
 from .models import Book
+from django.contrib.auth.forms import PasswordResetForm
 
 class BookForm(forms.ModelForm):
     class Meta:
