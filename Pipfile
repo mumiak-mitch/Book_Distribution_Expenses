@@ -10,6 +10,9 @@ pandas = "*"
 openpyxl = "*"
 django-allauth = "*"
 django-crispy-forms = "*"
+django-easy-pdf = "*"
+install = "*"
+xhtml2pdf = "*"
 
 [dev-packages]
 

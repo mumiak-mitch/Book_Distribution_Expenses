@@ -20,7 +20,7 @@ Create a Django app and implement a CRUD (Create, Read, Update, Delete) view to 
 
 Implement a CRUD view within the Django app to add and manage detailed book information. The information should include the title, author, publishing date, book category, and distribution expenses. Users should be able to add new books, view existing books, update book details, and delete books from the system.
 
-### 3. Data Import from Spreadsheets
+### 3. Data Import from Spreadsheets ***** Coming Soon
 
 Develop functionality to import existing data from spreadsheets into the Django application. This feature will facilitate the smooth transition of data from existing sources to the new Book Distribution Management System.
 

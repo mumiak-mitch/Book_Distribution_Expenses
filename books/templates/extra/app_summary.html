@@ -3,10 +3,28 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-<h2>Dashboard</h2>
+<div class="container">
+    <h2 class="mb-4">Dashboard</h2>
 
-<div>
-    <p>Number of Categories: {{ num_categories }}</p>
-    <p>Number of Books: {{ num_books }}</p>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card bg-light mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Categories</h5>
+                    <p class="card-text">Number of Categories: {{ num_categories }}</p>
+                    <a href="{% url 'bookcategory_list' %}" class="btn btn-primary">View All Categories</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-light mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Books</h5>
+                    <p class="card-text">Number of Books: {{ num_books }}</p>
+                    <a href="{% url 'book_list' %}" class="btn btn-primary">View All Books</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
